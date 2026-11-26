@@ -35,6 +35,14 @@ npm run build    # produção (dist/)
   `https://<projeto>.supabase.co/functions/v1/payment-webhook?provider=<nome>`.
   O acesso só é liberado por evento de pagamento aprovado validado no servidor.
 
+## Acesso pago (Kiwify + Supabase)
+
+- Só entra no app quem fez login com o **e-mail de uma compra aprovada**. A página inicial continua pública.
+- Variáveis na Vercel: `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY` e `VITE_CHECKOUT_URL` (link de pagamento). Sem as duas primeiras, o app mostra "Acesso em configuração".
+- Banco: rodar `supabase/migrations/0001_schema.sql`, `0002_acesso_kiwify.sql` e `supabase/seed.sql` no SQL Editor.
+- Webhook: função `payment-webhook` (Verify JWT desligado), segredo `KIWIFY_TOKEN` = token do webhook da Kiwify. URL: `https://<projeto>.supabase.co/functions/v1/payment-webhook`, eventos compra aprovada, reembolso e chargeback.
+- Liberar/bloquear alguém à mão: ver comentários no fim de `0002_acesso_kiwify.sql`.
+
 ## Pendências conhecidas
 
 - Login no app (Supabase Auth) e sincronização da ceia com a conta: o banco e as regras já estão prontos; falta ligar a interface quando o checkout for escolhido.
