@@ -139,6 +139,19 @@
   .ocard .btn{width:100%;font-size:1.1rem;padding:1.2rem}
   .secure{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 18px;margin-top:18px;font-size:.82rem;color:#a9b9ae}
 
+  .olist li .val{display:flex;flex-direction:column;align-items:flex-end;white-space:nowrap}
+  .olist s{color:#8fa397;font-size:.85rem}
+  .olist .main-item{border-bottom:1px dashed rgba(236,212,154,.2)}
+  .from{color:#b7c6bc;font-size:1rem;margin-top:6px}
+  .from s{color:#f3b2a6}
+  .save{display:inline-block;margin-top:6px;background:var(--berry);color:#fff;font-weight:700;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:.35rem .8rem}
+  .timer{display:flex;justify-content:center;gap:10px;margin:8px 0 22px}
+  .timer div{min-width:66px;background:rgba(0,0,0,.25);border:1px solid rgba(236,212,154,.3);border-radius:14px;padding:8px 6px}
+  .timer b{display:block;font-family:"Playfair Display",serif;font-size:1.8rem;color:var(--gold-300);line-height:1.1;font-variant-numeric:tabular-nums}
+  .timer span{font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:#a9b9ae}
+  .timer-label{font-size:.85rem;color:#f3b2a6;font-weight:600}
+  .js-clock{font-variant-numeric:tabular-nums}
+
   /* garantia */
   .guarantee{display:flex;gap:28px;align-items:center;background:#fff;border-radius:28px;padding:34px;border:1px solid var(--cream-200);box-shadow:0 10px 40px -28px rgba(10,31,22,.5);max-width:860px;margin:0 auto}
   .seal{flex:none;width:120px;height:120px;border-radius:50%;display:grid;place-items:center;text-align:center;background:radial-gradient(circle,var(--gold-300),var(--gold-500));color:var(--pine-950);font-weight:800;line-height:1.1;box-shadow:var(--glow)}
@@ -170,7 +183,7 @@
 </head>
 <body>
 
-<div class="bar">🎄 Oferta de Natal: <b>comprando hoje</b>, você leva os cardápios de sobremesas e de bebidas de bônus</div>
+<div class="bar">🎄 <b>Comprando hoje</b> você leva os cardápios de sobremesas e bebidas de bônus · termina em <b class="js-clock">--:--:--</b></div>
 
 <section class="hero">
   <header class="nav"><div class="wrap"><a class="logo" href="#">ceia<i>.</i>fácil</a></div></header>
@@ -181,7 +194,7 @@
       <p class="lead">Receitas práticas e econômicas, com tudo calculado para o número de convidados — e a lista de compras pronta para levar ao mercado.</p>
       <div class="cta">
         <a class="btn btn-gold js-checkout" href="#oferta">Quero minha ceia pronta →</a>
-        <span class="price-chip">por apenas <b>R$ 28,99</b></span>
+        <span class="price-chip">de <s>R$ 100</s> por apenas <b>R$ 28,99</b></span>
       </div>
       <div class="trust"><span>Acesso imediato</span><span>Funciona no celular</span><span>Garantia de 7 dias</span></div>
     </div>
@@ -276,7 +289,7 @@
           <span class="tag">Bônus 1</span>
           <h3>Cardápio de Sobremesas</h3>
           <ul><li>22 sobremesas de Natal: pavês, pudins, mousses, rabanada e mais</li><li>Quantidades calculadas para seus convidados</li><li>Ingredientes já entram na sua lista de compras</li></ul>
-          <p class="free">Grátis comprando hoje</p>
+          <p class="free"><s style="color:#9aa59f;font-weight:500">R$ 20,00</s> &nbsp;Grátis comprando hoje</p>
         </div>
       </article>
       <article class="bcard reveal">
@@ -285,7 +298,7 @@
           <span class="tag">Bônus 2</span>
           <h3>Cardápio de Bebidas</h3>
           <ul><li>20 bebidas: espumante, vinhos, drinks, sucos, refrigerantes e água</li><li>Quantas garrafas e jarras comprar para o seu número de pessoas</li><li>Receitas de drinks e sucos naturais com o passo a passo</li></ul>
-          <p class="free">Grátis comprando hoje</p>
+          <p class="free"><s style="color:#9aa59f;font-weight:500">R$ 20,00</s> &nbsp;Grátis comprando hoje</p>
         </div>
       </article>
     </div>
@@ -298,13 +311,16 @@
       <span class="eyebrow">Oferta de Natal</span>
       <h2 class="display" style="margin-top:10px">Tudo isso para a sua ceia</h2>
       <ul class="olist">
-        <li><span>36 receitas salgadas com quantidades calculadas</span><b>incluído</b></li>
-        <li><span>Lista de compras automática por setor</span><b>incluído</b></li>
-        <li><span>Bônus 1 · Cardápio de Sobremesas</span><b class="gift">grátis hoje</b></li>
-        <li><span>Bônus 2 · Cardápio de Bebidas</span><b class="gift">grátis hoje</b></li>
+        <li><span>36 receitas salgadas com quantidades calculadas + lista de compras automática</span><span class="val"><s>R$ 60,00</s><b>R$ 28,99</b></span></li>
+        <li><span>Bônus 1 · Cardápio de Sobremesas</span><span class="val"><s>R$ 20,00</s><b class="gift">grátis hoje</b></span></li>
+        <li><span>Bônus 2 · Cardápio de Bebidas</span><span class="val"><s>R$ 20,00</s><b class="gift">grátis hoje</b></span></li>
       </ul>
+      <p class="from">Tudo isso de <s>R$ 100,00</s> por apenas</p>
       <div class="price"><span class="rs">R$</span><span class="big">28,99</span></div>
-      <p class="price-note">pagamento único · Pix ou cartão · acesso imediato</p>
+      <span class="save">Você economiza R$ 71,01</span>
+      <p class="price-note" style="margin-top:12px">pagamento único · Pix ou cartão · acesso imediato</p>
+      <p class="timer-label">⏳ Os bônus de hoje terminam em</p>
+      <div class="timer"><div><b class="js-h">--</b><span>horas</span></div><div><b class="js-m">--</b><span>min</span></div><div><b class="js-s">--</b><span>seg</span></div></div>
       <a class="btn btn-gold js-checkout" href="#">Quero garantir minha ceia →</a>
       <div class="secure"><span>🔒 Compra segura pela Kiwify</span><span>📩 Acesso enviado por e-mail</span></div>
     </div>
@@ -334,7 +350,7 @@
       <details class="reveal"><summary>Paguei no Pix. Quanto tempo demora?</summary><p>Normalmente poucos minutos. Assim que o Pix é confirmado, o acesso é liberado e o e-mail chega.</p></details>
       <details class="reveal"><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Pede o reembolso direto pela Kiwify e recebe o valor de volta.</p></details>
     </div>
-    <div style="text-align:center;margin-top:44px" class="reveal"><a class="btn btn-gold js-checkout" href="#">Quero minha ceia por R$ 28,99 →</a></div>
+    <div style="text-align:center;margin-top:44px" class="reveal"><a class="btn btn-gold js-checkout" href="#">Quero minha ceia de <s style="opacity:.6">R$ 100</s> por R$ 28,99 →</a></div>
   </div>
 </section>
 
@@ -345,7 +361,7 @@
 </footer>
 
 <div class="sticky" id="sticky">
-  <div class="p">Ceia + 2 bônus<b>R$ 28,99</b></div>
+  <div class="p">Termina em <span class="js-clock">--:--:--</span><b>R$ 28,99</b></div>
   <a class="btn btn-gold js-checkout" href="#">Comprar agora</a>
 </div>
 
@@ -357,6 +373,20 @@
     if (CHECKOUT_URL) a.href = CHECKOUT_URL;
     else a.href = "#oferta";
   });
+
+  // Contagem regressiva até a meia-noite (horário do aparelho de quem está vendo)
+  const pad = n => String(n).padStart(2, "0");
+  function tick() {
+    const now = new Date();
+    const end = new Date(now); end.setHours(24, 0, 0, 0);
+    let t = Math.max(0, Math.floor((end - now) / 1000));
+    const h = Math.floor(t / 3600), m = Math.floor((t % 3600) / 60), sec = t % 60;
+    document.querySelectorAll(".js-clock").forEach(e => e.textContent = `${pad(h)}:${pad(m)}:${pad(sec)}`);
+    document.querySelectorAll(".js-h").forEach(e => e.textContent = pad(h));
+    document.querySelectorAll(".js-m").forEach(e => e.textContent = pad(m));
+    document.querySelectorAll(".js-s").forEach(e => e.textContent = pad(sec));
+  }
+  tick(); setInterval(tick, 1000);
 
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("on"); io.unobserve(e.target); } }), { threshold: .12 });
   document.querySelectorAll(".reveal").forEach(el => io.observe(el));
