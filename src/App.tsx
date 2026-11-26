@@ -8,6 +8,7 @@ import Drinks from "./pages/Drinks";
 import MyCeia from "./pages/MyCeia";
 import ShoppingList from "./pages/ShoppingList";
 import Account from "./pages/Account";
+import AccessGate from "./components/AccessGate";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -17,7 +18,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route element={<Layout />}>
+      <Route element={<AccessGate><Layout /></AccessGate>}>
         <Route path="/salgados" element={<Catalog kind="salgado" />} />
         <Route path="/sobremesas" element={<Catalog kind="sobremesa" />} />
         <Route path="/receita/:id" element={<RecipePage />} />
