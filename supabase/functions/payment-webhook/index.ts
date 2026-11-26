@@ -6,6 +6,60 @@
 // usando o token do webhook como chave. Configure o segredo KIWIFY_TOKEN com esse token.
 // Opcional: KIWIFY_PRODUCT_ID para aceitar só vendas desse produto.
 import { createClient } from "jsr:@supabase/supabase-js@2";
+import { SMTPClient } from "https://deno.land/x/denomailer@1.6.0/mod.ts";
+
+const APP_URL = "https://ceia-natal-beta.vercel.app/";
+
+// E-mail de compra aprovada, enviado pelo Gmail da equipe.
+// Segredos: GMAIL_USER (o endereço) e GMAIL_APP_PASSWORD (senha de app do Google).
+async function sendApprovedEmail(to: string) {
+  const user = Deno.env.get("GMAIL_USER");
+  const pass = Deno.env.get("GMAIL_APP_PASSWORD");
+  if (!user || !pass) return "sem-config";
+  const text = `Olá! 🎄
+
+Sua compra do CEIA FÁCIL foi confirmada!
+
+Agora você já pode começar a organizar sua ceia de Natal de maneira prática e sem complicação.
+
+Para acessar seu aplicativo:
+
+1. Acesse: ${APP_URL}
+2. Informe o mesmo e-mail utilizado na compra.
+3. Crie sua senha de acesso.
+
+Pronto! Sua ceia está nas suas mãos!
+
+Bom proveito e uma excelente ceia! ❤️
+
+Equipe CEIA FÁCIL`;
+  const html = `<div style="font-family:Arial,Helvetica,sans-serif;max-width:560px;margin:0 auto;color:#1b2a22;line-height:1.6">
+  <div style="background:#0f2a1f;color:#fdfaf3;padding:28px 24px;border-radius:16px 16px 0 0;text-align:center">
+    <div style="font-family:Georgia,serif;font-size:26px">ceia<span style="color:#dcb96a">.</span>fácil</div>
+  </div>
+  <div style="background:#fdfaf3;padding:28px 24px;border:1px solid #efe3cc;border-top:0;border-radius:0 0 16px 16px">
+    <p style="font-size:18px;margin:0 0 12px">Olá! 🎄</p>
+    <p style="margin:0 0 12px"><b>Sua compra do CEIA FÁCIL foi confirmada!</b></p>
+    <p style="margin:0 0 18px">Agora você já pode começar a organizar sua ceia de Natal de maneira prática e sem complicação.</p>
+    <p style="margin:0 0 8px"><b>Para acessar seu aplicativo:</b></p>
+    <ol style="margin:0 0 22px;padding-left:20px">
+      <li>Acesse o app pelo botão abaixo;</li>
+      <li>Informe o <b>mesmo e-mail utilizado na compra</b>;</li>
+      <li>Toque em <b>Primeiro acesso</b> e crie sua senha.</li>
+    </ol>
+    <p style="text-align:center;margin:0 0 22px"><a href="${APP_URL}" style="display:inline-block;background:#dcb96a;color:#0a1f16;text-decoration:none;font-weight:bold;padding:14px 28px;border-radius:999px">Acessar o CEIA FÁCIL</a></p>
+    <p style="margin:0 0 12px">Pronto! Sua ceia está nas suas mãos!</p>
+    <p style="margin:0">Bom proveito e uma excelente ceia! ❤️<br><b>Equipe CEIA FÁCIL</b></p>
+  </div>
+</div>`;
+  const client = new SMTPClient({ connection: { hostname: "smtp.gmail.com", port: 465, tls: true, auth: { username: user, password: pass } } });
+  try {
+    await client.send({ from: `CEIA FÁCIL <${user}>`, to, subject: "Sua compra do CEIA FÁCIL foi aprovada!", content: text, html });
+    return "enviado";
+  } finally {
+    await client.close();
+  }
+}
 
 const PRODUCT_ID = "ceia-facil-2026";
 
@@ -88,6 +142,12 @@ Deno.serve(async (req) => {
         { email, product_id: PRODUCT_ID, status: "active", source_event_id: inserted.id, updated_at: now },
         { onConflict: "email,product_id" },
       );
+      try {
+        const r = await sendApprovedEmail(email);
+        console.log("email compra aprovada:", r);
+      } catch (e) {
+        console.error("falha ao enviar e-mail:", e);
+      }
     } else if (type === "refunded" || type === "chargeback") {
       await db.from("entitlements").update({ status: "revoked", source_event_id: inserted.id, updated_at: now })
         .eq("email", email).eq("product_id", PRODUCT_ID);
