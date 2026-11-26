@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pine-50: #EEF3EF;
+  --color-pine-100: #D5E2D8;
+  --color-pine-600: #2C5240;
+  --color-pine-700: #22402F;
+  --color-pine-800: #1A3226;
+  --color-pine-900: #12241B;
+  --color-cream-50: #FCFAF5;
+  --color-cream-100: #F7F1E6;
+  --color-cream-200: #EFE5D2;
+  --color-gold-300: #DCC48F;
+  --color-gold-400: #C9A86A;
+  --color-gold-500: #B8955A;
+  --color-gold-600: #9A7A43;
+
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --shadow-soft: 0 10px 30px -12px rgba(18, 36, 27, .25);
+  --shadow-glow: 0 20px 60px -20px rgba(184, 149, 90, .55);
+
+  --animate-rise: rise .6s cubic-bezier(.2, .7, .2, 1) both;
+  @keyframes rise {
+    0% { opacity: 0; transform: translateY(14px); }
+    100% { opacity: 1; transform: none; }
+  }
+}
+
+@layer base {
+  body { @apply bg-cream-100 font-sans text-pine-900 antialiased; }
+  h1, h2, h3 { @apply font-display; }
+  button { cursor: pointer; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-pine-800 px-6 py-3 font-semibold text-cream-50 shadow-soft transition hover:bg-pine-700 active:scale-[.98];
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold-400 to-gold-500 px-7 py-3.5 font-semibold text-pine-900 shadow-glow transition hover:brightness-105 active:scale-[.98];
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-pine-800/15 bg-white/60 px-4 py-2 text-sm font-medium text-pine-800 transition hover:bg-white;
+  }
+  .card { @apply rounded-3xl bg-white/80 shadow-soft ring-1 ring-pine-900/5 backdrop-blur; }
+  .chip { @apply rounded-full px-3 py-1 text-xs font-medium; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[.2em] text-gold-600; }
+}
+
+input[type="range"].guest-range { -webkit-appearance: none; appearance: none; height: 6px; border-radius: 999px; background: #EFE5D2; }
+input[type="range"].guest-range::-webkit-slider-thumb { -webkit-appearance: none; width: 26px; height: 26px; border-radius: 50%; background: #1A3226; border: 3px solid #C9A86A; box-shadow: 0 4px 12px rgba(0,0,0,.2); cursor: pointer; }
+input[type="range"].guest-range::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: #1A3226; border: 3px solid #C9A86A; cursor: pointer; }
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; }
+}
