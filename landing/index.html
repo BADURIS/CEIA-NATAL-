@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ceia.fácil — A ceia de Natal completa, econômica e sem erro na quantidade</title>
+<meta name="description" content="36 receitas salgadas com as quantidades calculadas para o número de convidados e a lista de compras pronta. Comprando hoje: cardápio de sobremesas e de bebidas de bônus. R$ 28,99.">
+<meta property="og:title" content="ceia.fácil — Sua ceia de Natal, sem desperdício e sem estresse">
+<meta property="og:description" content="Receitas práticas e econômicas, quantidades calculadas por convidado e lista de compras pronta. R$ 28,99.">
+<meta property="og:image" content="fotos/peru-assado-tradicional.webp">
+<meta name="theme-color" content="#0f2a1f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+  /* ====== CONFIGURAÇÃO: cole aqui o link de pagamento da Kiwify ====== */
+  :root{
+    --pine-950:#0a1f16; --pine-900:#0f2a1f; --pine-800:#163828; --pine-700:#1f4a36; --pine-600:#2b5f46;
+    --cream-50:#fdfaf3; --cream-100:#f8f1e4; --cream-200:#efe3cc;
+    --gold-300:#ecd49a; --gold-400:#dcb96a; --gold-500:#c9a050; --gold-600:#a9823a;
+    --berry:#9e2b2b; --ink:#1b2a22; --muted:#5b6a61;
+    --radius:22px; --shadow:0 18px 50px -20px rgba(10,31,22,.35); --glow:0 10px 40px -10px rgba(220,185,106,.55);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream-100);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+  .display{font-family:"Playfair Display",Georgia,serif;font-weight:600;letter-spacing:-.01em;line-height:1.12}
+  .eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-500)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;border:0;cursor:pointer;text-decoration:none;font-weight:700;font-size:1.05rem;padding:1.05rem 1.9rem;border-radius:999px;transition:transform .2s,box-shadow .2s,filter .2s}
+  .btn-gold{background:linear-gradient(135deg,var(--gold-300),var(--gold-500) 55%,var(--gold-600));color:var(--pine-950);box-shadow:var(--glow)}
+  .btn-gold:hover{transform:translateY(-2px);filter:brightness(1.05)}
+  .btn small{font-weight:600;opacity:.75}
+  section{padding:96px 0}
+  @media (max-width:720px){section{padding:68px 0}}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.on{opacity:1;transform:none}
+
+  /* topo */
+  .bar{background:var(--berry);color:#fff;text-align:center;font-size:.85rem;font-weight:600;padding:.6rem 1rem;letter-spacing:.01em}
+  .bar b{color:var(--gold-300)}
+  header.nav{position:absolute;top:0;left:0;right:0;z-index:5;padding:22px 0}
+  .logo{font-family:"Playfair Display",serif;font-size:1.6rem;color:var(--cream-50);text-decoration:none}
+  .logo i{color:var(--gold-400);font-style:normal}
+
+  /* hero */
+  .hero{position:relative;background:var(--pine-950);color:var(--cream-50);padding:120px 0 90px;overflow:hidden;isolation:isolate}
+  .hero::before{content:"";position:absolute;inset:0;background:url(fotos/peru-assado-tradicional.webp) center/cover;opacity:.32;z-index:-2;transform:scale(1.05)}
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 70% 20%,rgba(220,185,106,.18),transparent 55%),linear-gradient(180deg,rgba(10,31,22,.55),rgba(10,31,22,.92) 75%,var(--pine-950));z-index:-1}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+  .hero h1{font-size:clamp(2.3rem,5.4vw,4rem);margin:18px 0 20px}
+  .hero h1 em{font-style:italic;color:var(--gold-300)}
+  .hero p.lead{font-size:1.15rem;color:#d9e2dc;max-width:560px}
+  .hero .cta{margin-top:34px;display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+  .price-chip{font-size:.95rem;color:#cfd9d2}
+  .price-chip b{font-size:1.35rem;color:var(--gold-300)}
+  .trust{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;font-size:.88rem;color:#b9c7be}
+  .trust span::before{content:"✓";color:var(--gold-400);font-weight:700;margin-right:.45rem}
+  .stack{position:relative;height:460px}
+  .stack figure{position:absolute;border-radius:var(--radius);overflow:hidden;box-shadow:0 30px 60px -25px rgba(0,0,0,.7);border:1px solid rgba(236,212,154,.25)}
+  .stack img{width:100%;height:100%;object-fit:cover}
+  .stack .a{width:72%;height:62%;right:0;top:0;transform:rotate(2deg)}
+  .stack .b{width:56%;height:46%;left:0;bottom:6%;transform:rotate(-4deg)}
+  .stack .c{width:42%;height:34%;right:4%;bottom:0;transform:rotate(5deg)}
+  .float-card{position:absolute;left:4%;top:8%;background:rgba(253,250,243,.96);color:var(--ink);border-radius:18px;padding:14px 18px;box-shadow:var(--shadow);font-size:.85rem;z-index:2}
+  .float-card b{display:block;font-family:"Playfair Display",serif;font-size:1.25rem;color:var(--pine-800)}
+  @media (max-width:900px){.hero-grid{grid-template-columns:1fr}.stack{height:340px;margin-top:10px}}
+
+  /* dores */
+  .pains{background:var(--cream-50)}
+  .center{text-align:center;max-width:720px;margin:0 auto 52px}
+  .center h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin-top:12px;color:var(--pine-900)}
+  .center p{color:var(--muted);margin-top:14px;font-size:1.06rem}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  @media (max-width:860px){.grid3,.grid2{grid-template-columns:1fr}}
+  .pain{background:#fff;border:1px solid var(--cream-200);border-radius:var(--radius);padding:26px 26px 24px;box-shadow:0 8px 30px -22px rgba(10,31,22,.4)}
+  .pain .q{font-family:"Playfair Display",serif;font-size:1.2rem;color:var(--pine-900);font-style:italic}
+  .pain .x{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#fbe9e6;color:var(--berry);font-weight:700;margin-bottom:14px}
+  .pain p{color:var(--muted);margin-top:8px;font-size:.97rem}
+  .turn{margin-top:46px;text-align:center;font-size:1.2rem;color:var(--pine-800)}
+  .turn b{color:var(--berry)}
+
+  /* benefícios */
+  .benefits{background:var(--pine-900);color:var(--cream-50);position:relative;overflow:hidden}
+  .benefits .center h2{color:var(--cream-50)}
+  .benefits .center p{color:#bccbc2}
+  .ben{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(236,212,154,.18);border-radius:var(--radius);padding:30px}
+  .ben .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:1.6rem;background:rgba(220,185,106,.14);margin-bottom:18px}
+  .ben h3{font-family:"Playfair Display",serif;font-size:1.4rem;color:var(--gold-300);font-weight:600}
+  .ben p{color:#c9d5cd;margin-top:10px}
+
+  /* como funciona */
+  .steps{counter-reset:s}
+  .step{position:relative;background:#fff;border-radius:var(--radius);padding:30px 28px 28px 28px;border:1px solid var(--cream-200)}
+  .step::before{counter-increment:s;content:counter(s);position:absolute;top:-18px;left:26px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--pine-800);color:var(--gold-300);font-family:"Playfair Display",serif;font-weight:700;font-size:1.2rem;box-shadow:0 6px 18px -6px rgba(10,31,22,.6)}
+  .step h3{font-size:1.15rem;color:var(--pine-900);margin-top:8px}
+  .step p{color:var(--muted);margin-top:8px}
+
+  /* produto */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .gallery figure{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:1/1;box-shadow:0 14px 30px -20px rgba(10,31,22,.6)}
+  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+  .gallery figure:hover img{transform:scale(1.06)}
+  .gallery figcaption{position:absolute;inset:auto 0 0 0;padding:28px 12px 10px;font-size:.82rem;font-weight:600;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.75))}
+  @media (max-width:860px){.gallery{grid-template-columns:repeat(2,1fr)}}
+  .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:30px}
+  .chips span{background:#fff;border:1px solid var(--cream-200);border-radius:999px;padding:.5rem 1rem;font-size:.9rem;font-weight:600;color:var(--pine-800)}
+
+  /* bônus */
+  .bonus{background:linear-gradient(180deg,var(--cream-100),var(--cream-200))}
+  .today{display:inline-flex;align-items:center;gap:.5rem;background:var(--berry);color:#fff;border-radius:999px;padding:.45rem 1rem;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .bcard{background:#fff;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--cream-200);display:flex;flex-direction:column}
+  .bcard .imgs{display:grid;grid-template-columns:1fr 1fr;height:220px}
+  .bcard .imgs img{width:100%;height:100%;object-fit:cover}
+  .bcard .body{padding:26px 28px 30px}
+  .tag{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-600);background:#fbf3df;border-radius:999px;padding:.35rem .8rem}
+  .bcard h3{font-family:"Playfair Display",serif;font-size:1.65rem;color:var(--pine-900);margin-top:12px}
+  .bcard ul{list-style:none;margin-top:14px;display:grid;gap:8px}
+  .bcard li{padding-left:1.6rem;position:relative;color:var(--muted)}
+  .bcard li::before{content:"✦";position:absolute;left:0;color:var(--gold-500)}
+  .bcard .free{margin-top:18px;font-weight:700;color:var(--berry)}
+
+  /* oferta */
+  .offer{background:var(--pine-950);color:var(--cream-50);position:relative;overflow:hidden}
+  .offer::before{content:"";position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(220,185,106,.16),transparent 60%);top:-420px;left:50%;transform:translateX(-50%)}
+  .ocard{position:relative;max-width:560px;margin:0 auto;background:linear-gradient(180deg,#183a2a,#10291e);border:1px solid rgba(236,212,154,.35);border-radius:32px;padding:40px 34px;box-shadow:0 40px 80px -30px rgba(0,0,0,.7);text-align:center}
+  .ocard h2{font-size:2rem;color:var(--cream-50)}
+  .olist{list-style:none;text-align:left;margin:26px 0;display:grid;gap:12px}
+  .olist li{display:flex;justify-content:space-between;gap:14px;border-bottom:1px dashed rgba(236,212,154,.2);padding-bottom:12px;color:#d6e0d9}
+  .olist li b{color:var(--gold-300);white-space:nowrap;font-weight:600}
+  .olist li .gift{color:#f3b2a6}
+  .price{margin:8px 0 4px}
+  .price .rs{font-size:1.3rem;vertical-align:top;color:var(--gold-300);font-weight:600}
+  .price .big{font-family:"Playfair Display",serif;font-size:4.4rem;font-weight:700;color:var(--gold-300);line-height:1}
+  .price-note{color:#b7c6bc;font-size:.92rem;margin-bottom:26px}
+  .ocard .btn{width:100%;font-size:1.1rem;padding:1.2rem}
+  .secure{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 18px;margin-top:18px;font-size:.82rem;color:#a9b9ae}
+
+  /* garantia */
+  .guarantee{display:flex;gap:28px;align-items:center;background:#fff;border-radius:28px;padding:34px;border:1px solid var(--cream-200);box-shadow:0 10px 40px -28px rgba(10,31,22,.5);max-width:860px;margin:0 auto}
+  .seal{flex:none;width:120px;height:120px;border-radius:50%;display:grid;place-items:center;text-align:center;background:radial-gradient(circle,var(--gold-300),var(--gold-500));color:var(--pine-950);font-weight:800;line-height:1.1;box-shadow:var(--glow)}
+  .seal b{font-family:"Playfair Display",serif;font-size:2.4rem;display:block}
+  .guarantee h3{font-family:"Playfair Display",serif;font-size:1.6rem;color:var(--pine-900)}
+  .guarantee p{color:var(--muted);margin-top:8px}
+  @media (max-width:640px){.guarantee{flex-direction:column;text-align:center}}
+
+  /* faq */
+  .faq{max-width:780px;margin:0 auto;display:grid;gap:12px}
+  details{background:#fff;border:1px solid var(--cream-200);border-radius:18px;padding:18px 22px}
+  summary{cursor:pointer;font-weight:600;color:var(--pine-900);list-style:none;display:flex;justify-content:space-between;gap:16px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--gold-600);transition:transform .3s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{color:var(--muted);margin-top:10px}
+
+  footer{background:var(--pine-950);color:#8fa397;text-align:center;padding:40px 20px 120px;font-size:.85rem}
+  footer .logo{font-size:1.3rem}
+
+  /* barra fixa no celular */
+  .sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:none;align-items:center;justify-content:space-between;gap:12px;background:rgba(10,31,22,.94);backdrop-filter:blur(10px);border:1px solid rgba(236,212,154,.3);border-radius:20px;padding:10px 10px 10px 18px;box-shadow:0 20px 40px -15px rgba(0,0,0,.6);transform:translateY(140%);transition:transform .4s}
+  .sticky.show{transform:none}
+  .sticky .p{color:var(--cream-50);font-size:.8rem;line-height:1.2}
+  .sticky .p b{color:var(--gold-300);font-size:1.15rem;display:block}
+  .sticky .btn{padding:.85rem 1.2rem;font-size:.95rem}
+  @media (max-width:760px){.sticky{display:flex}}
+</style>
+</head>
+<body>
+
+<div class="bar">🎄 Oferta de Natal: <b>comprando hoje</b>, você leva os cardápios de sobremesas e de bebidas de bônus</div>
+
+<section class="hero">
+  <header class="nav"><div class="wrap"><a class="logo" href="#">ceia<i>.</i>fácil</a></div></header>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Ceia de Natal 2026</span>
+      <h1 class="display">A ceia dos sonhos, <em>sem gastar demais</em> e sem errar na quantidade.</h1>
+      <p class="lead">Receitas práticas e econômicas, com tudo calculado para o número de convidados — e a lista de compras pronta para levar ao mercado.</p>
+      <div class="cta">
+        <a class="btn btn-gold js-checkout" href="#oferta">Quero minha ceia pronta →</a>
+        <span class="price-chip">por apenas <b>R$ 28,99</b></span>
+      </div>
+      <div class="trust"><span>Acesso imediato</span><span>Funciona no celular</span><span>Garantia de 7 dias</span></div>
+    </div>
+    <div class="stack reveal" aria-hidden="true">
+      <div class="float-card"><b>12 convidados</b>quantidades ajustadas na hora</div>
+      <figure class="a"><img src="fotos/pernil-suino-assado.webp" alt=""></figure>
+      <figure class="b"><img src="fotos/farofa-natalina-com-frutas-secas.webp" alt=""></figure>
+      <figure class="c"><img src="fotos/pave-de-chocolate.webp" alt=""></figure>
+    </div>
+  </div>
+</section>
+
+<section class="pains">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Você já passou por isso?</span>
+      <h2 class="display">Todo fim de ano é a mesma correria</h2>
+    </div>
+    <div class="grid3">
+      <div class="pain reveal"><span class="x">✕</span><div class="q">“Quanto de carne eu compro para 15 pessoas?”</div><p>Sem saber a quantidade certa, a gente compra no chute — e o chute sempre sai caro.</p></div>
+      <div class="pain reveal"><span class="x">✕</span><div class="q">“Gastei uma fortuna e ainda sobrou comida.”</div><p>Metade da ceia vai para o lixo ou vira marmita até janeiro.</p></div>
+      <div class="pain reveal"><span class="x">✕</span><div class="q">“Faltou farofa bem na hora de servir.”</div><p>Ou faltou, ou passou do ponto, ou a receita era complicada demais para o dia.</p></div>
+    </div>
+    <p class="turn reveal">Com o <b>ceia.fácil</b>, você decide o cardápio e o app faz as contas por você.</p>
+  </div>
+</section>
+
+<section class="benefits">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Por que funciona</span>
+      <h2 class="display">Feito para a ceia de verdade, da cozinha de casa</h2>
+      <p>Nada de receita de chef com ingrediente impossível. Aqui é o Natal que todo mundo ama, do jeito mais simples.</p>
+    </div>
+    <div class="grid3">
+      <div class="ben reveal"><div class="ic">💰</div><h3>Receitas econômicas</h3><p>Pratos clássicos com ingredientes fáceis de achar e quantidades na medida — você compra só o que vai usar.</p></div>
+      <div class="ben reveal"><div class="ic">⏱️</div><h3>Receitas práticas</h3><p>Passo a passo claro, tempo de preparo e dicas do que dá para adiantar na véspera.</p></div>
+      <div class="ben reveal"><div class="ic">👨‍👩‍👧‍👦</div><h3>Quantidade certa</h3><p>Informe quantas pessoas vêm e todas as receitas se ajustam sozinhas, em medidas de cozinha.</p></div>
+      <div class="ben reveal"><div class="ic">🛒</div><h3>Lista de compras pronta</h3><p>Todos os ingredientes somados e separados por setor do mercado. É só marcar enquanto compra.</p></div>
+      <div class="ben reveal"><div class="ic">🍽️</div><h3>Cardápio que combina</h3><p>Sugestões do que servir junto, para a mesa ficar bonita e equilibrada.</p></div>
+      <div class="ben reveal"><div class="ic">📱</div><h3>Tudo no celular</h3><p>Abra no mercado, na cozinha ou no sofá. Sua ceia fica salva no aparelho.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Como funciona</span>
+      <h2 class="display">Sua ceia planejada em 3 passos</h2>
+    </div>
+    <div class="grid3 steps">
+      <div class="step reveal"><h3>Escolha os pratos</h3><p>Monte seu cardápio entre carnes, acompanhamentos, saladas e entradas.</p></div>
+      <div class="step reveal"><h3>Diga quantos convidados</h3><p>As receitas recalculam tudo na hora — de 2 a 50 pessoas.</p></div>
+      <div class="step reveal"><h3>Vá às compras</h3><p>Leve a lista pronta e siga o passo a passo no dia. Simples assim.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">O que você recebe</span>
+      <h2 class="display">36 receitas salgadas para a sua ceia</h2>
+      <p>Dos pratos principais aos acompanhamentos, cada uma com foto, ingredientes, modo de preparo e dicas.</p>
+    </div>
+    <div class="gallery reveal">
+      <figure><img loading="lazy" src="fotos/peru-assado-tradicional.webp" alt="Peru assado"><figcaption>Peru assado tradicional</figcaption></figure>
+      <figure><img loading="lazy" src="fotos/tender-natalino-com-abacaxi.webp" alt="Tender com abacaxi"><figcaption>Tender com abacaxi</figcaption></figure>
+      <figure><img loading="lazy" src="fotos/bacalhau-ao-forno.webp" alt="Bacalhau ao forno"><figcaption>Bacalhau ao forno</figcaption></figure>
+      <figure><img loading="lazy" src="fotos/lombo-suino-ao-molho-de-laranja.webp" alt="Lombo ao molho de laranja"><figcaption>Lombo com laranja</figcaption></figure>
+      <figure><img loading="lazy" src="fotos/arroz-natalino-com-castanhas.webp" alt="Arroz natalino"><figcaption>Arroz natalino</figcaption></figure>
+      <figure><img loading="lazy" src="fotos/farofa-natalina-com-frutas-secas.webp" alt="Farofa natalina"><figcaption>Farofa natalina</figcaption></figure>
+      <figure><img loading="lazy" src="fotos/salpicao-de-frango.webp" alt="Salpicão"><figcaption>Salpicão de frango</figcaption></figure>
+      <figure><img loading="lazy" src="fotos/maionese-de-batata.webp" alt="Maionese de batata"><figcaption>Maionese de batata</figcaption></figure>
+    </div>
+    <div class="chips reveal"><span>12 pratos principais</span><span>9 arrozes e farofas</span><span>7 saladas</span><span>8 entradas</span></div>
+  </div>
+</section>
+
+<section class="bonus" id="bonus">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="today">⏳ Só comprando hoje</span>
+      <h2 class="display" style="margin-top:16px">Leve também 2 cardápios de bônus</h2>
+      <p>Garantindo sua ceia hoje, você recebe junto os cardápios de sobremesas e de bebidas — sem pagar nada a mais.</p>
+    </div>
+    <div class="grid2">
+      <article class="bcard reveal">
+        <div class="imgs"><img loading="lazy" src="fotos/pudim-de-leite-condensado.webp" alt="Pudim"><img loading="lazy" src="fotos/cheesecake-com-frutas-vermelhas.webp" alt="Cheesecake"></div>
+        <div class="body">
+          <span class="tag">Bônus 1</span>
+          <h3>Cardápio de Sobremesas</h3>
+          <ul><li>22 sobremesas de Natal: pavês, pudins, mousses, rabanada e mais</li><li>Quantidades calculadas para seus convidados</li><li>Ingredientes já entram na sua lista de compras</li></ul>
+          <p class="free">Grátis comprando hoje</p>
+        </div>
+      </article>
+      <article class="bcard reveal">
+        <div class="imgs"><img loading="lazy" src="fotos/vinho-tinto-seco.webp" alt="Vinho tinto"><img loading="lazy" src="fotos/caipirinha.webp" alt="Caipirinha"></div>
+        <div class="body">
+          <span class="tag">Bônus 2</span>
+          <h3>Cardápio de Bebidas</h3>
+          <ul><li>20 bebidas: espumante, vinhos, drinks, sucos, refrigerantes e água</li><li>Quantas garrafas e jarras comprar para o seu número de pessoas</li><li>Receitas de drinks e sucos naturais com o passo a passo</li></ul>
+          <p class="free">Grátis comprando hoje</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="oferta">
+  <div class="wrap">
+    <div class="ocard reveal">
+      <span class="eyebrow">Oferta de Natal</span>
+      <h2 class="display" style="margin-top:10px">Tudo isso para a sua ceia</h2>
+      <ul class="olist">
+        <li><span>36 receitas salgadas com quantidades calculadas</span><b>incluído</b></li>
+        <li><span>Lista de compras automática por setor</span><b>incluído</b></li>
+        <li><span>Bônus 1 · Cardápio de Sobremesas</span><b class="gift">grátis hoje</b></li>
+        <li><span>Bônus 2 · Cardápio de Bebidas</span><b class="gift">grátis hoje</b></li>
+      </ul>
+      <div class="price"><span class="rs">R$</span><span class="big">28,99</span></div>
+      <p class="price-note">pagamento único · Pix ou cartão · acesso imediato</p>
+      <a class="btn btn-gold js-checkout" href="#">Quero garantir minha ceia →</a>
+      <div class="secure"><span>🔒 Compra segura pela Kiwify</span><span>📩 Acesso enviado por e-mail</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-bottom:40px">
+  <div class="wrap">
+    <div class="guarantee reveal">
+      <div class="seal"><div><b>7</b>dias de<br>garantia</div></div>
+      <div>
+        <h3>Risco zero para você</h3>
+        <p>Se não gostar, é só pedir o reembolso em até 7 dias depois da compra e você recebe 100% do valor de volta. Sem perguntas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center reveal"><span class="eyebrow">Dúvidas</span><h2 class="display">Perguntas frequentes</h2></div>
+    <div class="faq">
+      <details class="reveal"><summary>Como eu recebo o acesso?</summary><p>Assim que o pagamento é aprovado, você recebe um e-mail com o link do app. No primeiro acesso, é só criar uma senha usando o mesmo e-mail da compra.</p></details>
+      <details class="reveal"><summary>Preciso baixar algum aplicativo?</summary><p>Não. O ceia.fácil abre direto no navegador do celular ou do computador.</p></details>
+      <details class="reveal"><summary>Serve para quantas pessoas?</summary><p>De 2 a 50 convidados. Você muda o número quando quiser e todas as quantidades se ajustam.</p></details>
+      <details class="reveal"><summary>As receitas são difíceis?</summary><p>Não. São pratos clássicos de Natal, com passo a passo simples e ingredientes de supermercado.</p></details>
+      <details class="reveal"><summary>Paguei no Pix. Quanto tempo demora?</summary><p>Normalmente poucos minutos. Assim que o Pix é confirmado, o acesso é liberado e o e-mail chega.</p></details>
+      <details class="reveal"><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Pede o reembolso direto pela Kiwify e recebe o valor de volta.</p></details>
+    </div>
+    <div style="text-align:center;margin-top:44px" class="reveal"><a class="btn btn-gold js-checkout" href="#">Quero minha ceia por R$ 28,99 →</a></div>
+  </div>
+</section>
+
+<footer>
+  <a class="logo" href="#">ceia<i>.</i>fácil</a>
+  <p style="margin-top:10px">Planejamento de ceia de Natal · Pagamento processado pela Kiwify</p>
+  <p style="margin-top:6px">© 2026 ceia.fácil</p>
+</footer>
+
+<div class="sticky" id="sticky">
+  <div class="p">Ceia + 2 bônus<b>R$ 28,99</b></div>
+  <a class="btn btn-gold js-checkout" href="#">Comprar agora</a>
+</div>
+
+<script>
+  // ====== CONFIGURAÇÃO: link de pagamento da Kiwify ======
+  const CHECKOUT_URL = ""; // ex.: "https://pay.kiwify.com.br/XXXXXXX"
+
+  document.querySelectorAll(".js-checkout").forEach(a => {
+    if (CHECKOUT_URL) a.href = CHECKOUT_URL;
+    else a.href = "#oferta";
+  });
+
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("on"); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+  const sticky = document.getElementById("sticky");
+  const offer = document.getElementById("oferta");
+  addEventListener("scroll", () => {
+    const r = offer.getBoundingClientRect();
+    const inOffer = r.top < innerHeight && r.bottom > 0;
+    sticky.classList.toggle("show", scrollY > 600 && !inOffer);
+  }, { passive: true });
+</script>
+</body>
+</html>
