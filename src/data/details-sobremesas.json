@@ -1,0 +1,444 @@
+{
+"pave-de-chocolate": {
+"prep": "30 min + 4 h de geladeira",
+"cook": "10 min",
+"steps": [
+"Dissolva o amido no leite frio.",
+"Acrescente leite condensado e chocolate em pó.",
+"Leve ao fogo baixo, mexendo até engrossar.",
+"Desligue e misture o creme de leite.",
+"Em uma travessa, alterne camadas de creme e biscoitos rapidamente umedecidos no leite.",
+"Finalize com chocolate derretido ou raspas.",
+"Refrigere por pelo menos 4 horas."
+],
+"tips": [
+"Biscoito encharcado desmancha: só um mergulho rápido no leite."
+],
+"swaps": [
+"Chocolate em pó: cacau em pó com 1 colher a mais de açúcar."
+],
+"storage": "Geladeira por até 3 dias."
+},
+"pave-de-bis": {
+"prep": "30 min + 4 h de geladeira",
+"cook": "10 min",
+"steps": [
+"Misture leite condensado, leite, amido e gemas.",
+"Leve ao fogo baixo, mexendo até engrossar.",
+"Desligue e incorpore uma caixa de creme de leite.",
+"Pique uma parte do Bis e reserve o restante para a montagem.",
+"Alterne creme e pedaços de Bis em uma travessa.",
+"Derreta o chocolate e misture com o creme de leite para fazer a ganache.",
+"Espalhe por cima, decore com Bis e leve à geladeira por pelo menos 4 horas."
+],
+"tips": [
+"O chocolate da decoração entra só no final para continuar crocante."
+],
+"swaps": [
+"Wafer de chocolate de marca própria do mercado no lugar do chocolate de marca."
+],
+"storage": "Geladeira por até 3 dias."
+},
+"pave-de-morango": {
+"prep": "30 min + 4 h de geladeira",
+"cook": "10 min",
+"steps": [
+"Dissolva o amido no leite e misture com leite condensado e gemas.",
+"Cozinhe em fogo baixo até engrossar.",
+"Desligue e misture o creme de leite.",
+"Higienize os morangos, seque bem e corte em pedaços.",
+"Monte camadas de creme, biscoitos umedecidos e morangos.",
+"Finalize com creme e chocolate branco.",
+"Mantenha refrigerado e consuma preferencialmente em até 24 horas, devido à fruta fresca."
+],
+"tips": [
+"Prepare na véspera, mas não com mais de um dia de antecedência: o morango solta água."
+],
+"swaps": [
+"Morango fresco: morango congelado, escorrido, só nas camadas internas."
+],
+"storage": "Geladeira por até 2 dias."
+},
+"pave-de-amendoim": {
+"prep": "30 min + 4 h de geladeira",
+"cook": "10 min",
+"steps": [
+"Dissolva o amido no leite e misture o leite condensado.",
+"Leve ao fogo até engrossar.",
+"Desligue e acrescente o creme de leite.",
+"Incorpore metade do amendoim ao creme.",
+"Monte camadas de creme e biscoitos umedecidos.",
+"Finalize com o restante do amendoim triturado.",
+"Leve à geladeira por pelo menos 4 horas."
+],
+"tips": [
+"Contém amendoim: avise os convidados com alergia."
+],
+"swaps": [
+"Amendoim: paçoca esfarelada (dispensa parte do açúcar do creme)."
+],
+"storage": "Geladeira por até 3 dias."
+},
+"bombom-de-uva-na-travessa": {
+"prep": "30 min + 3 a 4 h de geladeira",
+"cook": "15 min",
+"steps": [
+"Lave as uvas e seque muito bem. Retire os cabinhos.",
+"Em uma panela, coloque leite condensado e manteiga.",
+"Mexa em fogo baixo até formar um creme consistente, mas ainda macio.",
+"Desligue e misture uma caixa de creme de leite. Deixe esfriar.",
+"Distribua as uvas em uma travessa e cubra com o creme branco.",
+"Derreta o chocolate e misture com a outra caixa de creme de leite.",
+"Espalhe a ganache por cima e refrigere até firmar."
+],
+"tips": [
+"Uva molhada deixa o creme aguado: seque muito bem."
+],
+"swaps": [
+"Chocolate meio amargo: chocolate ao leite ou cobertura fracionada."
+],
+"storage": "Geladeira por até 2 dias."
+},
+"pave-de-abacaxi": {
+"prep": "30 min + 4 h de geladeira",
+"cook": "25 min",
+"steps": [
+"Cozinhe o abacaxi com o açúcar até ficar macio e liberar o caldo.",
+"Escorra e reserve a fruta. Deixe esfriar.",
+"Dissolva o amido no leite, junte o leite condensado e cozinhe até engrossar.",
+"Desligue e misture o creme de leite.",
+"Monte camadas de creme, biscoito umedecido e abacaxi.",
+"Finalize com creme e coco ralado.",
+"Refrigere por pelo menos 4 horas."
+],
+"tips": [
+"Abacaxi cru talha o creme: cozinhe sempre antes."
+],
+"swaps": [
+"Abacaxi fresco: abacaxi em calda, escorrido (dispensa o cozimento longo)."
+],
+"storage": "Geladeira por até 3 dias."
+},
+"rabanada-tradicional": {
+"prep": "15 min",
+"cook": "20 min",
+"steps": [
+"Corte o pão em fatias de aproximadamente 2 cm.",
+"Misture leite, leite condensado e baunilha.",
+"Passe as fatias rapidamente nessa mistura.",
+"Em outro recipiente, bata os ovos.",
+"Passe as fatias nos ovos e frite em óleo quente, sem sobrecarregar a panela.",
+"Escorra em papel absorvente.",
+"Misture açúcar e canela e passe as rabanadas ainda mornas."
+],
+"tips": [
+"Pão de um ou dois dias absorve sem desmanchar."
+],
+"swaps": [
+"Pão francês amanhecido no lugar da baguete."
+],
+"storage": "Melhor no dia. Em pote fechado, até 2 dias."
+},
+"rabanada-assada": {
+"prep": "15 min",
+"cook": "25 min",
+"steps": [
+"Corte o pão em fatias.",
+"Misture leite, leite condensado e baunilha.",
+"Umedeça as fatias rapidamente e passe nos ovos batidos.",
+"Disponha em assadeira untada com manteiga.",
+"Pincele levemente com manteiga derretida.",
+"Asse em forno preaquecido a 200 °C, virando na metade do tempo, até dourar.",
+"Passe na mistura de açúcar e canela."
+],
+"tips": [
+"Menos óleo e menos sujeira: boa opção para fazer em quantidade."
+],
+"swaps": [
+"Manteiga: margarina."
+],
+"storage": "Pote fechado por até 2 dias."
+},
+"manjar-de-coco-com-ameixa": {
+"prep": "20 min + 6 h de geladeira",
+"cook": "25 min",
+"steps": [
+"Dissolva o amido em parte do leite frio.",
+"Misture o restante do leite, leite de coco, leite condensado e coco ralado.",
+"Leve ao fogo baixo, mexendo sempre até engrossar bem.",
+"Despeje em forma levemente umedecida e deixe esfriar.",
+"Refrigere por pelo menos 4 horas.",
+"Para a calda, cozinhe açúcar, água, ameixas e canela até formar uma calda levemente espessa.",
+"Deixe esfriar, desenforme o manjar e cubra com a calda."
+],
+"tips": [
+"Forma molhada com água fria ajuda a desenformar."
+],
+"swaps": [
+"Ameixa preta: calda de goiabada."
+],
+"storage": "Geladeira por até 4 dias."
+},
+"pudim-de-panetone": {
+"prep": "20 min + 4 h de geladeira",
+"cook": "1h a 1h15",
+"steps": [
+"Derreta o açúcar até formar um caramelo dourado.",
+"Acrescente cuidadosamente a água quente e mexa até dissolver os torrões.",
+"Espalhe a calda em uma forma de pudim.",
+"Bata leite condensado, leite, ovos e baunilha.",
+"Distribua os pedaços de panetone na forma e despeje a mistura.",
+"Acrescente passas, se desejar.",
+"Asse em banho-maria, coberto com papel-alumínio, até firmar.",
+"Deixe esfriar e refrigere antes de desenformar."
+],
+"tips": [
+"Ótimo para aproveitar o panetone que sobrou do ano."
+],
+"swaps": [
+"Panetone: chocotone ou pão doce."
+],
+"storage": "Geladeira por até 4 dias."
+},
+"pudim-de-leite-condensado": {
+"prep": "15 min + 6 h de geladeira",
+"cook": "1h a 1h20",
+"steps": [
+"Derreta o açúcar em uma panela até obter caramelo dourado.",
+"Acrescente a água quente cuidadosamente e mexa até dissolver.",
+"Espalhe o caramelo em uma forma de pudim.",
+"Bata leite condensado, leite e ovos no liquidificador.",
+"Despeje na forma caramelizada.",
+"Cubra com papel-alumínio e asse em banho-maria a 180 °C até firmar.",
+"Deixe esfriar e leve à geladeira por pelo menos 6 horas antes de desenformar."
+],
+"tips": [
+"Bater demais cria furinhos: só misture."
+],
+"swaps": [
+"Cozinhar na panela de pressão: 40 minutos após pegar pressão, em banho-maria."
+],
+"storage": "Geladeira por até 4 dias."
+},
+"mousse-de-maracuja": {
+"prep": "15 min + 4 h de geladeira",
+"cook": "5 min (cobertura)",
+"steps": [
+"Coloque leite condensado, creme de leite e suco no liquidificador.",
+"Bata até formar um creme homogêneo.",
+"Distribua em taças ou em uma travessa.",
+"Leve à geladeira por pelo menos 4 horas.",
+"Decore com a polpa do maracujá antes de servir."
+],
+"tips": [
+"Use o suco concentrado sem diluir: é ele que dá a firmeza."
+],
+"swaps": [
+"Suco concentrado: polpa de 4 maracujás coada."
+],
+"storage": "Geladeira por até 3 dias."
+},
+"mousse-de-limao": {
+"prep": "15 min + 3 h de geladeira",
+"cook": "Não vai ao fogo",
+"steps": [
+"Coloque leite condensado e creme de leite no liquidificador.",
+"Bata e acrescente o suco de limão aos poucos.",
+"Continue batendo até engrossar.",
+"Distribua em uma travessa ou taças.",
+"Decore com raspas de limão.",
+"Refrigere por pelo menos 3 horas."
+],
+"tips": [
+"Rale só a parte verde da casca: a parte branca amarga."
+],
+"swaps": [
+"Biscoito: pode omitir."
+],
+"storage": "Geladeira por até 3 dias."
+},
+"gelatina-mosaico": {
+"prep": "30 min + 6 h de geladeira",
+"cook": "10 min",
+"steps": [
+"Prepare separadamente as quatro gelatinas coloridas, utilizando um pouco menos de água do que o indicado na embalagem para obter cubos firmes.",
+"Leve à geladeira até endurecer.",
+"Corte em cubos e misture delicadamente.",
+"Hidrate e dissolva a gelatina incolor conforme as instruções do fabricante.",
+"Bata leite condensado e creme de leite e acrescente a gelatina dissolvida.",
+"Coloque os cubos coloridos em uma travessa e despeje o creme.",
+"Leve à geladeira até firmar completamente."
+],
+"tips": [
+"Use sabores de cores bem diferentes: o mosaico fica mais bonito."
+],
+"swaps": [
+"Creme de leite: iogurte natural."
+],
+"storage": "Geladeira por até 4 dias."
+},
+"bolo-gelado-de-chocolate": {
+"prep": "25 min + 4 h de geladeira",
+"cook": "35 a 40 min",
+"steps": [
+"Bata ovos, açúcar, óleo e leite.",
+"Acrescente farinha e chocolate em pó, misturando até ficar uniforme.",
+"Incorpore o fermento delicadamente.",
+"Despeje em forma untada e asse a 180 °C até passar no teste do palito.",
+"Misture os ingredientes da calda em uma panela e aqueça até ficar homogêneo.",
+"Fure o bolo ainda morno e espalhe a calda.",
+"Corte em pedaços e refrigere por pelo menos 4 horas."
+],
+"tips": [
+"Embrulhado em porções, fica prático para servir e transportar."
+],
+"swaps": [
+"Coco ralado: granulado."
+],
+"storage": "Geladeira por até 4 dias."
+},
+"chocotone-recheado": {
+"prep": "30 min + 2 h de geladeira",
+"cook": "15 min",
+"steps": [
+"Corte uma tampa no topo do chocotone.",
+"Retire parte do miolo, deixando uma camada de massa nas laterais e no fundo.",
+"Em uma panela, misture leite condensado, chocolate picado e manteiga.",
+"Mexa em fogo baixo até obter um brigadeiro cremoso.",
+"Desligue e misture o creme de leite. Deixe esfriar.",
+"Misture parte do miolo ao recheio, se desejar.",
+"Recheie o chocotone e feche com a tampa.",
+"Cubra com chocolate derretido e decore. Refrigere para firmar."
+],
+"tips": [
+"Use o miolo que sobrar para um pudim de panetone."
+],
+"swaps": [
+"Chocotone: panetone tradicional."
+],
+"storage": "Geladeira por até 3 dias."
+},
+"pave-de-panetone": {
+"prep": "30 min + 4 h de geladeira",
+"cook": "10 min",
+"steps": [
+"Dissolva o amido no leite e acrescente leite condensado e gemas.",
+"Cozinhe em fogo baixo até engrossar.",
+"Desligue e misture uma caixa de creme de leite.",
+"Em uma travessa, coloque uma camada de creme.",
+"Distribua pedaços de panetone levemente umedecidos no leite.",
+"Repita as camadas até terminar os ingredientes.",
+"Derreta o chocolate e misture com o creme de leite restante.",
+"Cubra o pavê com a ganache e refrigere por pelo menos 4 horas."
+],
+"tips": [
+"Não molhe o panetone: o creme já umedece."
+],
+"swaps": [
+"Frutas cristalizadas: uva-passa ou gotas de chocolate."
+],
+"storage": "Geladeira por até 3 dias."
+},
+"torta-de-chocolate-com-morango": {
+"prep": "30 min + 3 h de geladeira",
+"cook": "15 min",
+"steps": [
+"Triture os biscoitos até formar uma farinha.",
+"Misture com a manteiga derretida.",
+"Forre o fundo e as laterais de uma forma de torta, pressionando bem.",
+"Leve ao forno a 180 °C por aproximadamente 10 minutos e deixe esfriar.",
+"Derreta o chocolate e misture o creme de leite e a manteiga.",
+"Despeje a ganache sobre a base fria.",
+"Decore com morangos higienizados e bem secos.",
+"Refrigere até firmar."
+],
+"tips": [
+"Forma de fundo removível facilita desenformar."
+],
+"swaps": [
+"Morango: uva ou kiwi."
+],
+"storage": "Geladeira por até 3 dias (sem os morangos)."
+},
+"cheesecake-com-frutas-vermelhas": {
+"prep": "30 min + 6 h de geladeira",
+"cook": "1h a 1h15",
+"steps": [
+"Triture os biscoitos e misture com a manteiga.",
+"Pressione no fundo de uma forma de aro removível.",
+"Bata cream cheese, leite condensado, ovos, baunilha, limão e farinha até ficar homogêneo.",
+"Despeje sobre a base.",
+"Asse em forno a 160 °C até o centro ficar firme, mas ainda levemente tremido.",
+"Deixe esfriar e refrigere por pelo menos 6 horas.",
+"Para a cobertura, cozinhe as frutas com açúcar e limão até formar uma calda.",
+"Esfrie e distribua sobre a cheesecake."
+],
+"tips": [
+"Esfriar devagar evita rachaduras."
+],
+"swaps": [
+"Frutas vermelhas: geleia de goiaba ou de morango."
+],
+"storage": "Geladeira por até 4 dias."
+},
+"salada-de-frutas-cremosa": {
+"prep": "25 min",
+"cook": "Não vai ao fogo",
+"steps": [
+"Higienize e descasque as frutas que necessitam.",
+"Corte em cubos pequenos e retire sementes e partes não comestíveis.",
+"Regue as maçãs e bananas com suco de limão para retardar o escurecimento.",
+"Misture todas as frutas com o suco de laranja.",
+"Acrescente leite condensado e creme de leite.",
+"Misture delicadamente e mantenha refrigerada até servir."
+],
+"tips": [
+"Banana e maçã escurecem rápido: corte por último."
+],
+"swaps": [
+"Use as frutas da estação mais baratas na semana."
+],
+"storage": "Sem creme, geladeira por 1 dia; com creme, consumir no dia."
+},
+"torta-holandesa": {
+"prep": "40 min + 6 h de geladeira",
+"cook": "10 min (base)",
+"steps": [
+"Triture os biscoitos e misture com manteiga.",
+"Forre o fundo de uma forma de aro removível.",
+"Distribua os biscoitos de cobertura em pé nas laterais.",
+"Bata a manteiga até ficar clara e cremosa.",
+"Acrescente o leite condensado aos poucos e depois o creme de leite e a baunilha.",
+"Despeje o creme sobre a base.",
+"Derreta o chocolate e misture com o creme de leite.",
+"Cubra a torta e refrigere por pelo menos 6 horas."
+],
+"tips": [
+"Esta versão não leva ovos crus."
+],
+"swaps": [
+"Biscoito coberto de chocolate: biscoito recheado de chocolate."
+],
+"storage": "Geladeira por até 4 dias."
+},
+"brigadeirao": {
+"prep": "15 min + 4 h de geladeira",
+"cook": "1h a 1h15",
+"steps": [
+"Bata no liquidificador leite condensado, creme de leite, chocolate, ovos, manteiga e açúcar.",
+"Unte uma forma com furo central.",
+"Despeje a mistura e cubra com papel-alumínio.",
+"Asse em banho-maria a 180 °C até ficar firme.",
+"Deixe amornar e desenforme.",
+"Leve à geladeira por aproximadamente 6 horas.",
+"Decore com chocolate granulado antes de servir."
+],
+"tips": [
+"Firme ao toque, mas levemente úmido no centro: está no ponto."
+],
+"swaps": [
+"Chocolate em pó: cacau com 1 colher a mais de açúcar."
+],
+"storage": "Geladeira por até 4 dias."
+}
+}
