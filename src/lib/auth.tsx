@@ -37,6 +37,10 @@ const MSGS: Record<string, string> = {
   weak_password: "Senha fraca: use pelo menos 6 caracteres.",
   over_email_send_rate_limit: "Muitos e-mails enviados agora. Tente de novo em alguns minutos.",
   over_request_rate_limit: "Muitas tentativas. Aguarde um pouco e tente de novo.",
+  cadastro_sem_compra: "Não encontramos compra aprovada para este e-mail. Use o mesmo e-mail da compra — se pagou agora, aguarde alguns minutos.",
+  P0001: "Não encontramos compra aprovada para este e-mail. Use o mesmo e-mail da compra — se pagou agora, aguarde alguns minutos.",
+  unexpected_failure: "Não encontramos compra aprovada para este e-mail. Use o mesmo e-mail da compra — se pagou agora, aguarde alguns minutos.",
+  "Database error saving new user": "Não encontramos compra aprovada para este e-mail. Use o mesmo e-mail da compra — se pagou agora, aguarde alguns minutos.",
 };
 
 async function api(path: string, body: unknown, token?: string) {
@@ -48,7 +52,7 @@ async function api(path: string, body: unknown, token?: string) {
   const data = await res.json().catch(() => ({}));
   if (!res.ok) {
     const code = data.error_code || data.code || data.msg || data.error_description || data.message || "";
-    throw new Error(MSGS[code] || MSGS[data.msg] || MSGS[data.error_description] || "Não foi possível concluir. Tente de novo.");
+    throw new Error(MSGS[data.message] || MSGS[code] || MSGS[data.msg] || MSGS[data.error_description] || "Não foi possível concluir. Tente de novo.");
   }
   return data;
 }
