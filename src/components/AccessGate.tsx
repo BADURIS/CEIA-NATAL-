@@ -8,18 +8,27 @@ export default function AccessGate({ children }: { children: ReactNode }) {
   const { status } = useAuth();
   if (status === "liberado") return <>{children}</>;
   return (
-    <div className="flex min-h-screen flex-col bg-cream-100">
-      <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4">
-        <Logo />
-        <a href="#inicio" className="text-sm font-medium text-pine-700 hover:underline">Voltar ao início</a>
-      </header>
-      <main className="mx-auto flex w-full max-w-md flex-1 flex-col justify-center px-4 pb-16">
-        {status === "carregando" && <p className="text-center text-pine-700">Verificando seu acesso…</p>}
-        {status === "sem-config" && (
-          <Box title="Acesso em configuração" text="O login ainda não foi ligado neste site. Volte em instantes." />
-        )}
-        {status === "deslogado" && <LoginForm />}
-        {status === "sem-acesso" && <NoAccess />}
+    <div className="min-h-screen bg-cream-100 lg:grid lg:grid-cols-[1.1fr_1fr]">
+      <aside className="relative h-72 overflow-hidden bg-pine-900 sm:h-80 lg:sticky lg:top-0 lg:h-screen">
+        <img src="fotos/peru-assado-tradicional.webp" alt="" className="absolute inset-0 h-full w-full object-cover opacity-80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-pine-900 via-pine-900/40 to-pine-900/10" />
+        <div className="absolute inset-x-0 bottom-0 p-6 pb-14 sm:p-10 sm:pb-16 lg:pb-10">
+          <Logo light />
+          <p className="mt-3 max-w-md font-display text-[1.45rem] leading-snug text-cream-50 sm:text-3xl lg:text-4xl">
+            Sua ceia de Natal planejada, do cardápio à lista de compras.
+          </p>
+          <p className="mt-2 hidden text-cream-100/80 lg:block">Receitas com a quantidade certa para cada convidado.</p>
+        </div>
+      </aside>
+      <main className="relative z-10 -mt-8 flex flex-col justify-center px-4 pb-14 sm:px-8 lg:mt-0 lg:min-h-screen lg:py-12">
+        <div className="mx-auto w-full max-w-md">
+          {status === "carregando" && <div className="card p-8 text-center text-pine-700">Verificando seu acesso…</div>}
+          {status === "sem-config" && (
+            <Box title="Acesso em configuração" text="O login ainda não foi ligado neste site. Volte em instantes." />
+          )}
+          {status === "deslogado" && <LoginForm />}
+          {status === "sem-acesso" && <NoAccess />}
+        </div>
       </main>
     </div>
   );
