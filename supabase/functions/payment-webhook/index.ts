@@ -14,7 +14,7 @@ const APP_URL = "https://ceia-natal-beta.vercel.app/";
 // Segredos: GMAIL_USER (o endereço) e GMAIL_APP_PASSWORD (senha de app do Google).
 async function sendApprovedEmail(to: string) {
   const user = Deno.env.get("GMAIL_USER");
-  const pass = Deno.env.get("GMAIL_APP_PASSWORD");
+  const pass = (Deno.env.get("GMAIL_APP_PASSWORD") ?? "").replace(/\s+/g, "");
   if (!user || !pass) return "sem-config";
   const text = `Olá! 🎄
 
